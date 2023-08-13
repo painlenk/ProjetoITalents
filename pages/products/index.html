@@ -4,21 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="./sharedStyles/header.css" />
+    <link rel="stylesheet" href="./sharedStyles/footer.css" />
+
     <title>Products</title>
   </head>
   <body>
     <header>
-      <figure>
-        <img src="./assets/logoDefault.svg" alt="Logo padrão" />
-      </figure>
       <nav>
-        <ul>
+        <figure class="header-logo">
+          <img class="logo" src="./assets/logoDefault.svg" alt="Logo padrão" />
+        </figure>
+        <ul class="pages">
           <li><a href="/index.html">Home</a></li>
           <li><a href="/products.html">Produtos</a></li>
           <li><a href="/carrinho">Carrinho</a></li>
         </ul>
 
-        <div>
+        <div class="user-info">
           <span><a href="/login.html">Login</a></span>
           <span><a href="/register.html">Registro</a></span>
         </div>
@@ -114,22 +118,25 @@
     </main>
 
     <footer>
-      <div>
+      <div class="address-container">
         <address>
-          <h4>Dados da empresa</h4>
-          <span> Nome: Empresa Padrão </span>
-          <span> CNPJ: 0000/100/00-00 </span>
+          <span> Empresa Padrão </span>
+          <span> CNPJ: 0000/0001-00 </span>
           <span> Endereço: Rua teste curitiba-PR </span>
-          <a href="tel:+55-41-9999-9999">+55 (41) 9999-9999</a>
+          <span
+            >Tel:<a href="tel:+55-41-9999-9999">+55 (41) 9999-9999</a>
+          </span>
         </address>
       </div>
 
-      <div>
+      <div class="address-container">
         <address>
-          <h4>Code Mages devhouse</h4>
-          <span> CNPJ: 0000/100/00-00 </span>
+          <span> Code Mages Dev House </span>
+          <span> CNPJ: 0000/0001-00 </span>
           <span> Endereço: Rua teste curitiba-PR </span>
-          <a href="tel:+55-41-9999-9999">+55 (41) 9999-9999</a>
+          <span
+            >Tel:<a href="tel:+55-41-9999-9999">+55 (41) 9999-9999</a>
+          </span>
         </address>
       </div>
     </footer>
