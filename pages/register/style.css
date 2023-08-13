@@ -1,0 +1,15 @@
+main {
+  max-width: 1300px;
+
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+form {
+  height: auto;
+  border-radius: 8px;
+  padding: 1rem;
+}
