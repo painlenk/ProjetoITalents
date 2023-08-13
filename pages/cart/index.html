@@ -5,24 +5,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="../../styles/reset.css" />
+  <link rel="stylesheet" href="../../styles/global.css" />
+  <link rel="stylesheet" href="../../styles/header.css" />
+  <link rel="stylesheet" href="../../styles/footer.css" />
+  <link rel="stylesheet" href="style.css" />
   <title>Carrinho</title>
 </head>
 
 <body>
   <header>
-    <figure>
-      <img src="./assets/logoDefault.svg" alt="Logo padrão" />
-    </figure>
     <nav>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/products.html">Produtos</a></li>
-        <li><a href="/carrinho">Carrinho</a></li>
+      <figure class="header-logo">
+        <img
+          class="logo"
+          src="../../assets/logoDefault.svg"
+          alt="Logo padrão"
+        />
+      </figure>
+      <ul class="pages">
+        <li><a href="../home/">Home</a></li>
+        <li><a href="../products/">Produtos</a></li>
+        <li><a href="../cart/">Carrinho</a></li>
       </ul>
 
-      <div>
-        <span><a href="/login.html">Login</a></span>
-        <span><a href="/register.html">Registro</a></span>
+      <div class="user-info">
+        <span><a href="../login/">Login</a></span>
+        <span><a href="../register/">Registro</a></span>
       </div>
     </nav>
   </header>
@@ -30,91 +39,151 @@
   <main>
     <section>
       <h3>Carrinho</h3>
-      <ul>
-        <li>
-          <figure>
-            <img src="./assets/imgDefault.svg" alt="Produto padrão" />
-          </figure>
-          <div>
-            <span>nome do produto</span>
-            <span>Preço: R$ 100,00</span>
-            <span>Quantidade: 1</span>
-            <button>Remover</button>
-          </div>
-        </li>
+      <ul class="product-list">
+          <li class="product-item">
+            <figure class="product-image">
+              <img src="../../assets/imgDefault.svg" alt="Produto padrão" />
+            </figure>
+            <di class="item-info">
+              <span>nome do produto</span>
+              <span>Preço: R$ 100,00</span>
+              <span>Quantidade: 1</span>
+              <button class="btn-remove">Remover</button>
+            </div>
+          </li>
 
-        <li>
-          <figure>
-            <img src="./assets/imgDefault.svg" alt="Produto padrão" />
-          </figure>
-          <div>
-            <span>nome do produto</span>
-            <span>Preço: R$ 100,00</span>
-            <span>Quantidade: 1</span>
-            <button>Remover</button>
-          </div>
-        </li>
+          <li class="product-item">
+            <figure class="product-image">
+              <img src="../../assets/imgDefault.svg" alt="Produto padrão" />
+            </figure>
+            <di class="item-info">
+              <span>nome do produto</span>
+              <span>Preço: R$ 100,00</span>
+              <span>Quantidade: 1</span>
+              <button class="btn-remove">Remover</button>
+            </div>
+          </li>
 
-        <li>
-          <figure>
-            <img src="./assets/imgDefault.svg" alt="Produto padrão" />
-          </figure>
-          <div>
-            <span>nome do produto</span>
-            <span>Preço: R$ 100,00</span>
-            <span>Quantidade: 1</span>
-            <button>Remover</button>
-          </div>
-        </li>
+          <li class="product-item">
+            <figure class="product-image">
+              <img src="../../assets/imgDefault.svg" alt="Produto padrão" />
+            </figure>
+            <di class="item-info">
+              <span>nome do produto</span>
+              <span>Preço: R$ 100,00</span>
+              <span>Quantidade: 1</span>
+              <button class="btn-remove">Remover</button>
+            </div>
+          </li>
+
+          <li class="product-item">
+            <figure class="product-image">
+              <img src="../../assets/imgDefault.svg" alt="Produto padrão" />
+            </figure>
+            <di class="item-info">
+              <span>nome do produto</span>
+              <span>Preço: R$ 100,00</span>
+              <span>Quantidade: 1</span>
+              <button class="btn-remove">Remover</button>
+            </div>
+          </li>
+
+          <li class="product-item">
+            <figure class="product-image">
+              <img src="../../assets/imgDefault.svg" alt="Produto padrão" />
+            </figure>
+            <di class="item-info">
+              <span>nome do produto</span>
+              <span>Preço: R$ 100,00</span>
+              <span>Quantidade: 1</span>
+              <button class="btn-remove">Remover</button>
+            </div>
+          </li>
+
+          <li class="product-item">
+            <figure class="product-image">
+              <img src="../../assets/imgDefault.svg" alt="Produto padrão" />
+            </figure>
+            <di class="item-info">
+              <span>nome do produto</span>
+              <span>Preço: R$ 100,00</span>
+              <span>Quantidade: 1</span>
+              <button class="btn-remove">Remover</button>
+            </div>
+          </li>
+
+          <li class="product-item">
+            <figure class="product-image">
+              <img src="../../assets/imgDefault.svg" alt="Produto padrão" />
+            </figure>
+            <di class="item-info">
+              <span>nome do produto</span>
+              <span>Preço: R$ 100,00</span>
+              <span>Quantidade: 1</span>
+              <button class="btn-remove">Remover</button>
+            </div>
+          </li>
       </ul>
     </section>
 
     <section>
       <h3>Resumo</h3>
+      
 
-      <div>
-        <span>Total R$: 300,00</span>
-        <span>Quandidade de items: 3</span>
-      </div>
+      <div class="summary-container">
+          
+        <div class="summary">
+          <span>Total R$: 300,00</span>
+          <span>Quandidade de items: 3</span>
+        </div>
 
-      <div>
+      
 
         <form action="">
           <fieldset>
             <legend>Método de pagamento</legend>
 
+            <div class="input-itemns">
 
-            <div>
-              <figure><img src="./assets/debitCardIcon.svg" alt="cartão de debito"></figure>
-              <input type="radio" id="debit" name="paymentMethod">
+            
+              <div>
+                <figure class="payment-img"><img src="../../assets/debitCardIcon.svg" alt="cartão de debito"></figure>
+                <input type="radio" id="debit" name="paymentMethod">
+              </div>
+
+              <div>
+                <figure class="payment-img"><img src="../../assets/creditCardIcon.svg" alt="cartão de credito"></figure>
+                <input type="radio" id="credit" name="paymentMethod">
+              </div>
             </div>
 
-            <div>
-              <figure><img src="./assets/creditCardIcon.svg" alt="cartão de credito"></figure>
-              <input type="radio" id="credit" name="paymentMethod">
-            </div>
+            <input type="submit" value='pagar'>
           </fieldset>
         </form>
+      </div>
     </section>
   </main>
 
   <footer>
-    <div>
+    <div class="address-container">
       <address>
-        <h4>Dados da empresa</h4>
-        <span> Nome: Empresa Padrão </span>
-        <span> CNPJ: 0000/100/00-00 </span>
+        <span> Empresa Padrão </span>
+        <span> CNPJ: 0000/0001-00 </span>
         <span> Endereço: Rua teste curitiba-PR </span>
-        <a href="tel:+55-41-9999-9999">+55 (41) 9999-9999</a>
+        <span
+          >Tel:<a href="tel:+55-41-9999-9999">+55 (41) 9999-9999</a>
+        </span>
       </address>
     </div>
 
-    <div>
+    <div class="address-container">
       <address>
-        <h4>Code Mages devhouse</h4>
-        <span> CNPJ: 0000/100/00-00 </span>
+        <span> Code Mages Dev House </span>
+        <span> CNPJ: 0000/0001-00 </span>
         <span> Endereço: Rua teste curitiba-PR </span>
-        <a href="tel:+55-41-9999-9999">+55 (41) 9999-9999</a>
+        <span
+          >Tel:<a href="tel:+55-41-9999-9999">+55 (41) 9999-9999</a>
+        </span>
       </address>
     </div>
   </footer>
