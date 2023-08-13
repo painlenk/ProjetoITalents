@@ -1,0 +1,44 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  max-width: 270px;
+  max-height: 300px;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+.card-img-container {
+  max-width: 100%;
+  border-bottom: 1px solid gray;
+}
+.card-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.card-btn-add-cart {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  background: #93edc8;
+  cursor: pointer;
+  font-weight: 700;
+}
