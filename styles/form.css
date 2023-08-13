@@ -1,6 +1,5 @@
 form {
   width: 650px;
-  border: 1px solid blue;
   margin: 50px auto;
   display: flex;
   flex-direction: column;
@@ -20,7 +19,6 @@ fieldset {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
   gap: 1rem;
   width: 80%;
 }
