@@ -2,10 +2,11 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  position: relative;
+  position: absolute;
   bottom: 0;
-  height: 150px;
   border-top: 1px solid gray;
+  left: 0;
+  height: 150px;
 }
 .address-container {
   margin: 10px 0;
