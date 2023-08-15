@@ -7,6 +7,7 @@ footer {
   border-top: 1px solid gray;
   left: 0;
   height: 150px;
+  font-family: "roboto", sans-serif;
 }
 .address-container {
   margin: 10px 0;
@@ -23,7 +24,7 @@ address {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   gap: 10px;
 }
 address:first-child {
@@ -41,4 +42,26 @@ address > span > a {
   text-decoration: none;
   color: black;
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    height: initial;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .address-container:first-child {
+    border: none;
+    border-bottom: 2px solid gray;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .address-container:last-child {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }

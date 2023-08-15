@@ -3,7 +3,7 @@ main {
   flex-direction: column;
   gap: 100px;
   margin: 40px auto;
-  max-width: 1300px;
+  max-width: 90%;
 }
 
 section {
@@ -44,4 +44,8 @@ aside {
   flex-direction: column;
   gap: 10px;
   border: 1px solid black;
+}
+
+footer {
+  position: initial;
 }
