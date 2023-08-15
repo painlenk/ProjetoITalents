@@ -52,6 +52,9 @@ address > span > a {
     align-items: center;
     gap: 0;
   }
+  .address-container > address > span {
+    text-align: center;
+  }
 
   .address-container:first-child {
     border: none;

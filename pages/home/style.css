@@ -49,3 +49,9 @@ aside {
 footer {
   position: initial;
 }
+
+@media (max-width: 800px) {
+  .emphasys {
+    flex-direction: column;
+  }
+}
