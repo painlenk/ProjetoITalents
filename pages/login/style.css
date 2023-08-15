@@ -6,3 +6,9 @@ main {
   margin: 40px auto;
   position: relative;
 }
+
+@media (max-width: 600px) {
+  footer {
+    position: initial;
+  }
+}
