@@ -1,3 +1,7 @@
+@import url(./theme.css);
+
 html {
   font-family: "Roboto", sans-serif;
+  background-color: var(--mainColor);
+  color: var(--textMainColor);
 }

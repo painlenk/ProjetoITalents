@@ -1,0 +1,10 @@
+:root {
+  --mainColor: #121214;
+  --secondaryColor: #866be5;
+  --formColor: #202024;
+
+  --borderRadius: 8px;
+
+  --textMainColor: #72737a;
+  --textWhite: white;
+}

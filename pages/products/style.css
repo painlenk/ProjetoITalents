@@ -10,7 +10,6 @@ section {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border: 1px solid black;
 }
 
 footer {

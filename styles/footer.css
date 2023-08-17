@@ -4,7 +4,7 @@ footer {
   justify-content: center;
   position: absolute;
   bottom: 0;
-  border-top: 1px solid gray;
+  border-top: 1px solid var(--secondaryColor);
   left: 0;
   height: 150px;
   font-family: "roboto", sans-serif;
@@ -40,7 +40,7 @@ address > span {
 
 address > span > a {
   text-decoration: none;
-  color: black;
+  color: var(--secondaryColor);
   cursor: pointer;
 }
 

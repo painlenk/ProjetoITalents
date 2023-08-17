@@ -7,11 +7,14 @@ form {
   align-items: center;
   gap: 1.5rem;
   padding: 2rem;
+  background-color: var(--formColor);
+  border-radius: var(--borderRadius);
 }
 
 h1 {
   font-size: 1.5rem;
   font-weight: 700;
+  color: var(--textWhite);
 }
 
 fieldset {
@@ -26,26 +29,43 @@ fieldset {
 .input-container {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
   width: 100%;
 }
 
 .input-container > label {
   font-weight: 600;
+  color: var(--textWhite);
 }
 
 .input-container > input {
   height: 40px;
-  border-radius: 8px;
-  background: #d9d9d9;
+  border-radius: var(--borderRadius);
+  border: none;
+  background-color: var(--mainColor);
+  color: var(--secondaryColor);
+  padding-left: 5px;
+  font-size: 1rem;
+}
+
+.input-container > input:focus {
+  outline: 1px solid var(--secondaryColor);
 }
 
 input[type="submit"] {
   width: 100%;
   height: 40px;
-  border-radius: 8px;
-  font: 1rem;
+  border-radius: var(--borderRadius);
+  font-size: 1.25rem;
   font-weight: 700;
-  background-color: #8ff63e;
+  background-color: var(--secondaryColor);
+  border: none;
   margin-top: calc(45px - 1rem);
+  transition: all ease-in 0.3s;
+}
+
+input[type="submit"]:hover {
+  color: var(--textWhite);
+  cursor: pointer;
+  border: 1px solid white;
 }

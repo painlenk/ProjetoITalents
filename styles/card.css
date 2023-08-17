@@ -14,16 +14,15 @@
   gap: 10px;
   max-width: 270px;
   max-height: 300px;
-  border: 1px solid gray;
+  border: 1px solid var(--secondaryColor);
   border-radius: 8px;
 }
 .card-img-container {
   max-width: 100%;
-  border-bottom: 1px solid gray;
 }
 .card-img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: var(--borderRadius) var(--borderRadius) 0 0;
 }
 
 .card-info {
@@ -32,13 +31,15 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  color: var(--textWhite);
 }
 .card-btn-add-cart {
   margin-bottom: 10px;
   padding: 10px;
-  border: 1px solid gray;
+  border: none;
   border-radius: 8px;
-  background: #93edc8;
+  background: var(--secondaryColor);
+  color: var(--textWhite);
   cursor: pointer;
   font-weight: 700;
 }

@@ -30,6 +30,7 @@ section:last-child {
 h3 {
   font-size: 1.5rem;
   font-weight: 700;
+  color: var(--textWhite);
 }
 
 .product-list {
@@ -38,6 +39,18 @@ h3 {
   gap: 20px;
   overflow-y: auto;
   width: 100%;
+}
+.product-list::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.product-list::-webkit-scrollbar-track {
+  background: #333;
+}
+
+.product-list::-webkit-scrollbar-thumb {
+  background: var(--secondaryColor);
 }
 
 .product-item {
@@ -84,6 +97,7 @@ h3 {
   justify-content: center;
   gap: 8px;
   font-weight: 700;
+  color: var(--textWhite);
 }
 
 .summary-container {
@@ -98,6 +112,7 @@ form {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  color: var(--textWhite);
 }
 
 .input-itemns {
@@ -123,17 +138,19 @@ button {
 }
 
 input[type="radio"] {
-  height: 20px;
-  width: 20px;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 input[type="submit"] {
   height: 70px;
   width: 100%;
   border: 1px solid gray;
-  border-radius: 8px;
+  border-radius: var(--borderRadius);
   margin-top: 40px;
   background-color: #aeff88;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 footer {
@@ -164,7 +181,7 @@ footer {
     overflow-y: auto;
   }
 
-  .item-info > span {
+  .product-list.item-info > span {
     text-align: center;
   }
 }
