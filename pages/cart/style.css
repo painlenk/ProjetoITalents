@@ -151,6 +151,14 @@ input[type="submit"] {
   background-color: #aeff88;
   font-size: 1.25rem;
   font-weight: 600;
+  transition: all ease-in-out 0.3s;
+}
+
+input[type="submit"]:hover {
+  scale: 1.1;
+  border: 2px solid white;
+  background-color: var(--secondaryColor);
+  color: white;
 }
 
 footer {

@@ -13,7 +13,7 @@
   align-items: center;
   gap: 10px;
   max-width: 270px;
-  max-height: 300px;
+
   border: 1px solid var(--secondaryColor);
   border-radius: 8px;
 }
@@ -42,4 +42,9 @@
   color: var(--textWhite);
   cursor: pointer;
   font-weight: 700;
+  transition: all ease-in 0.3s;
+}
+
+.card-btn-add-cart:hover {
+  transform: scale(1.1);
 }
