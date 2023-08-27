@@ -1,0 +1,13 @@
+[x]responsividade
+[x]criação de thema
+[x]atualizar estilo com thema
+[x]criar imagens de logo
+[x] inserir logo
+[x]criar imagem de produto
+[x] inserir imagem de produto
+[x]criar imagem de cards
+[x] inserir imagem nos cards
+[x] ajustar estilo
+
+[]criar script para mostrar produtos
+[]remover itens do carrinho

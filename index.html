@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./shareds/styles/reset.css" />
+    <link rel="stylesheet" href="./shareds/styles/global.css" />
+    <link rel="stylesheet" href="./shareds/styles/footer.css" />
+    <link rel="stylesheet" href="./shareds/styles/header.css" />
+    <link rel="stylesheet" href="./shareds/styles/card.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+
+    <title>ITalents</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <figure class="header-logo">
+          <img
+            class="hamburguer-menu"
+            src="./assets/hamburger-menu.svg"
+            alt="menu"
+          />
+
+          <a href="./index.html">
+            <img
+              class="logo"
+              src="./assets/logoDefault.svg"
+              alt="Logo padrão"
+            />
+          </a>
+        </figure>
+        <ul class="pages">
+          <li><a class="link-to" href="./index.html">Home</a></li>
+          <li><a class="link-to" href="./products.html">Produtos</a></li>
+          <li><a class="link-to" href="./cart.html">Carrinho</a></li>
+        </ul>
+
+        <div class="user-info">
+          <span><a class="link-to" href="./login.html">Login</a></span>
+          <span
+            ><a class="link-to register" href="./register.html"
+              >Registro</a
+            ></span
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h3>Destaques da semana</h3>
+        <div class="emphasys">
+          <figure class="emphasys-img-container">
+            <img
+              class="emphasys-img"
+              src="./assets/banner.svg"
+              alt="imagem padrão"
+            />
+          </figure>
+          <div class="empasys-description-container">
+            <h1>Nome do Produto</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi,
+              nam nihil ad magnam culpa incidunt debitis reprehenderit, et
+              quaerat perspiciatis tempore, veritatis quam sapiente beatae at
+              odio similique dolore explicabo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <aside>
+        <h3>Mais Vendidos</h3>
+        <div class="card-container"></div>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="address-container">
+        <address>
+          <span> Empresa Padrão </span>
+          <span> CNPJ: 0000/0001-00 </span>
+          <span> Endereço: Rua teste curitiba-PR </span>
+          <span
+            >Tel:<a href="tel:+55-41-9999-9999">+55 (41) 9999-9999</a>
+          </span>
+        </address>
+      </div>
+
+      <div class="address-container">
+        <address>
+          <span> Code Mages Dev House </span>
+          <span> CNPJ: 0000/0001-00 </span>
+          <span> Endereço: Rua teste curitiba-PR </span>
+          <span
+            >Tel:<a href="tel:+55-41-9999-9999">+55 (41) 9999-9999</a>
+          </span>
+        </address>
+      </div>
+    </footer>
+    <script src="./scripts/home/products.js"></script>
+  </body>
+</html>
