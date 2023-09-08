@@ -1,199 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="./shareds/styles/reset.css" />
+    <link rel="stylesheet" href="./shareds/styles/global.css" />
+    <link rel="stylesheet" href="./shareds/styles/header.css" />
+    <link rel="stylesheet" href="./shareds/styles/footer.css" />
+    <link rel="stylesheet" href="./styles/cart.css" />
+    <title>Carrinho</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no" />
-  <link rel="stylesheet" href="../../styles/reset.css" />
-  <link rel="stylesheet" href="../../styles/global.css" />
-  <link rel="stylesheet" href="../../styles/header.css" />
-  <link rel="stylesheet" href="../../styles/footer.css" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Carrinho</title>
-</head>
+  <body>
+    <header>
+      <nav>
+        <figure class="header-logo">
+          <img
+            class="hamburguer-menu"
+            src="./assets/hamburger-menu.svg"
+            alt="menu"
+          />
+          <a href="./index.html">
+            <img
+              class="logo"
+              src="./assets/logoDefault.svg"
+              alt="Logo padrão"
+            />
+          </a>
+        </figure>
+        <ul class="pages">
+          <li><a class="link-to" href="./index.html">Home</a></li>
+          <li><a class="link-to" href="./products.html">Produtos</a></li>
+          <li><a class="link-to" href="./cart.html">Carrinho</a></li>
+        </ul>
 
-<body>
-  <header>
-    <nav>
-      <figure class="header-logo">
-        <img
-        class="hamburguer-menu"
-        src="../../assets/hamburger-menu.svg"
-        alt="menu"
-      />
-     <a href="../home/index.html"> 
-        <img
-          class="logo"
-          src="../../assets/logoDefault.svg"
-          alt="Logo padrão"
-        />
-     </a>
-      </figure>
-      <ul class="pages">
-        <li><a class="link-to" href="../home/">Home</a></li>
-        <li><a class="link-to" href="../products/">Produtos</a></li>
-        <li><a class="link-to" href="../cart/">Carrinho</a></li>
-      </ul>
-
-      <div class="user-info">
-        <span><a class="link-to " href="../login/">Login</a></span>
-        <span><a class="link-to register " href="../register/">Registro</a></span>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h3>Carrinho</h3>
-      <ul class="product-list">
-          <li class="product-item">
-            <figure class="product-image">
-              <img src="../../assets/imgDefault.svg" alt="Produto padrão" />
-            </figure>
-            <di class="item-info">
-              <span>nome do produto</span>
-              <span>Preço: R$ 100,00</span>
-              <span>Quantidade: 1</span>
-              <button class="btn-remove">Remover</button>
-            </div>
-          </li>
-
-          <li class="product-item">
-            <figure class="product-image">
-              <img src="../../assets/imgDefault2.svg" alt="Produto padrão" />
-            </figure>
-            <di class="item-info">
-              <span>nome do produto</span>
-              <span>Preço: R$ 100,00</span>
-              <span>Quantidade: 1</span>
-              <button class="btn-remove">Remover</button>
-            </div>
-          </li>
-
-          <li class="product-item">
-            <figure class="product-image">
-              <img src="../../assets/imgDefault3.svg" alt="Produto padrão" />
-            </figure>
-            <di class="item-info">
-              <span>nome do produto</span>
-              <span>Preço: R$ 100,00</span>
-              <span>Quantidade: 1</span>
-              <button class="btn-remove">Remover</button>
-            </div>
-          </li>
-
-          <li class="product-item">
-            <figure class="product-image">
-              <img src="../../assets/imgDefault.svg" alt="Produto padrão" />
-            </figure>
-            <di class="item-info">
-              <span>nome do produto</span>
-              <span>Preço: R$ 100,00</span>
-              <span>Quantidade: 1</span>
-              <button class="btn-remove">Remover</button>
-            </div>
-          </li>
-
-          <li class="product-item">
-            <figure class="product-image">
-              <img src="../../assets/imgDefault3.svg" alt="Produto padrão" />
-            </figure>
-            <di class="item-info">
-              <span>nome do produto</span>
-              <span>Preço: R$ 100,00</span>
-              <span>Quantidade: 1</span>
-              <button class="btn-remove">Remover</button>
-            </div>
-          </li>
-
-          <li class="product-item">
-            <figure class="product-image">
-              <img src="../../assets/imgDefault.svg" alt="Produto padrão" />
-            </figure>
-            <di class="item-info">
-              <span>nome do produto</span>
-              <span>Preço: R$ 100,00</span>
-              <span>Quantidade: 1</span>
-              <button class="btn-remove">Remover</button>
-            </div>
-          </li>
-
-          <li class="product-item">
-            <figure class="product-image">
-              <img src="../../assets/imgDefault.svg" alt="Produto padrão" />
-            </figure>
-            <di class="item-info">
-              <span>nome do produto</span>
-              <span>Preço: R$ 100,00</span>
-              <span>Quantidade: 1</span>
-              <button class="btn-remove">Remover</button>
-            </div>
-          </li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>Resumo</h3>
-      
-
-      <div class="summary-container">
-          
-        <div class="summary">
-          <span>Total R$: 300,00</span>
-          <span>Quandidade de items: 3</span>
+        <div class="user-info">
+          <span><a class="link-to" href="./login.html">Login</a></span>
+          <span
+            ><a class="link-to register" href="./register.html"
+              >Registro</a
+            ></span
+          >
         </div>
+      </nav>
+    </header>
 
-      
+    <main>
+      <section>
+        <h3>Carrinho</h3>
+        <ul class="product-list"></ul>
+      </section>
 
-        <form action="">
-          <fieldset>
-            <legend>Método de pagamento</legend>
+      <section>
+        <h3>Resumo</h3>
 
-            <div class="input-itemns">
+        <div class="summary-container">
+          <div class="summary">
+            <span>Total R$: 300,00</span>
+            <span>Quandidade de items: 3</span>
+          </div>
 
-            
-              <div>
-                <figure class="payment-img"><img src="../../assets/debitCardIcon.svg" alt="cartão de debito"></figure>
-                <input type="radio" id="debit" name="paymentMethod">
+          <form action="">
+            <fieldset>
+              <legend>Método de pagamento</legend>
+
+              <div class="input-itemns">
+                <div>
+                  <figure class="payment-img">
+                    <img
+                      src="./assets/debitCardIcon.svg"
+                      alt="cartão de debito"
+                    />
+                  </figure>
+                  <input type="radio" id="debit" name="paymentMethod" />
+                </div>
+
+                <div>
+                  <figure class="payment-img">
+                    <img
+                      src="./assets/creditCardIcon.svg"
+                      alt="cartão de credito"
+                    />
+                  </figure>
+                  <input type="radio" id="credit" name="paymentMethod" />
+                </div>
               </div>
 
-              <div>
-                <figure class="payment-img"><img src="../../assets/creditCardIcon.svg" alt="cartão de credito"></figure>
-                <input type="radio" id="credit" name="paymentMethod">
-              </div>
-            </div>
+              <input type="submit" value="Pagar Agora" />
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
 
-            <input type="submit" value='Pagar Agora'>
-          </fieldset>
-        </form>
+    <footer>
+      <div class="address-container">
+        <address>
+          <span> Empresa Padrão </span>
+          <span> CNPJ: 0000/0001-00 </span>
+          <span> Endereço: Rua teste curitiba-PR </span>
+          <span
+            >Tel:<a href="tel:+55-41-9999-9999">+55 (41) 9999-9999</a>
+          </span>
+        </address>
       </div>
-    </section>
-  </main>
 
-  <footer>
-    <div class="address-container">
-      <address>
-        <span> Empresa Padrão </span>
-        <span> CNPJ: 0000/0001-00 </span>
-        <span> Endereço: Rua teste curitiba-PR </span>
-        <span
-          >Tel:<a href="tel:+55-41-9999-9999">+55 (41) 9999-9999</a>
-        </span>
-      </address>
-    </div>
-
-    <div class="address-container">
-      <address>
-        <span> Code Mages Dev House </span>
-        <span> CNPJ: 0000/0001-00 </span>
-        <span> Endereço: Rua teste curitiba-PR </span>
-        <span
-          >Tel:<a href="tel:+55-41-9999-9999">+55 (41) 9999-9999</a>
-        </span>
-      </address>
-    </div>
-  </footer>
-</body>
-
+      <div class="address-container">
+        <address>
+          <span> Code Mages Dev House </span>
+          <span> CNPJ: 0000/0001-00 </span>
+          <span> Endereço: Rua teste curitiba-PR </span>
+          <span
+            >Tel:<a href="tel:+55-41-9999-9999">+55 (41) 9999-9999</a>
+          </span>
+        </address>
+      </div>
+    </footer>
+    <script src="./scripts/cart/cartList.js"></script>
+  </body>
 </html>
